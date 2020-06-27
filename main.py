@@ -8,3 +8,8 @@ def echo():
 	
 	body = request.get_json()
 	return jsonify(body), 200
+
+
+@app.route('/', methods=['GET'])
+def get():
+	return 'Hellow get method', 200
